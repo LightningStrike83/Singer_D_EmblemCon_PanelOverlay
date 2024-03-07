@@ -24,7 +24,7 @@
     <section id="top-area" class="grid-con">
         <div id="questions" class="col-span-full">
             <p @click="previousQuestion" class="arrow"><</p>
-            <p>{{question}}</p>
+            <p>{{questionArray[{{count}}].question}}</p>
             <p @click="nextQuestion" class="arrow">></p>
         </div>
     </section>

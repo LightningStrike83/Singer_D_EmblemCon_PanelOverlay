@@ -48,8 +48,6 @@ const app = createApp({
 const questions= createApp({
     data() {
         return {
-            question: questionArray.question[count],
-
             count: 0,
 
             questionArray: [
