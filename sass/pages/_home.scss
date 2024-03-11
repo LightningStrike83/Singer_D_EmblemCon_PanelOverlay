@@ -2,6 +2,14 @@ body {
     background-color: #000434;
 }
 
+img:not(#question-image) {
+    max-width: 200px;
+}
+
+#question-image {
+    max-height: 500px;
+}
+
 #top-area {
     margin-top: 20px;
 }
@@ -13,6 +21,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .arrow {
@@ -27,12 +36,14 @@ body {
 
 .point-area {
     display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 #player-area {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .points {
@@ -43,4 +54,26 @@ body {
 .name {
     text-align: center;
     margin-bottom: 10px;
+}
+
+.player {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#hostess-area {
+    border: 3px solid white;
+    height: 350px;
+    background-color: #001d9d;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    #hostess-area {
+        height: 100%;
+    }
 }
